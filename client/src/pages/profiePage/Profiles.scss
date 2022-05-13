@@ -1,0 +1,205 @@
+@import "../../app.scss";
+
+.profiles-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  display: flex;
+
+  height: 100vh;
+  background-color: black;
+
+.nav{
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+
+  /*Animations*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  .nav__contents{
+    display: flex;
+    justify-content: space-between;
+    .nav__black{
+      background-color: #111;
+      .nav__logo{
+        position: fixed;
+        top:10px;
+        left: 0;
+        width: 80px;
+        object-fit: contain;
+        padding-left: 20px;
+        cursor: pointer;
+      }
+       
+        
+
+    }
+  }
+}
+.title {
+  color: white;
+  font-family: inherit;
+  font-size: 50px;
+  user-select: none;
+  @include mobile {
+    font-size: 25px;
+      
+    }
+}
+  .profiles {
+    display: flex;
+    margin: 10px;
+    .profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 20px;
+      margin-top: 40px;
+      margin-bottom: 80px;
+      @include mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+        
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      .profile:first-child {
+        margin-left: 0px;
+      }
+      .profile:last-child {
+        margin-right: 0px;
+      }
+      .image{
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+        @include mobile {
+          margin: 5px;
+          }
+
+        .imag{
+            height: 150px;
+            width: 150px;
+            background-color: white;
+            @include mobile {
+              height: 100px;
+              width: 100px;
+              background-color: white;
+              }
+        }
+        h4{
+          color: white;
+          margin-left: 35px;
+          @include mobile {
+            color: white;
+          margin-left: 20px;
+            }
+        }
+      }
+    }
+  }
+}
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  /* 
+  
+  .profiles-container > .profiles > .profile:hover > .username {
+    color: white;
+    margin: 5px;
+  }
+  
+  .profiles-container > .profiles > .profile:hover > .image {
+    border: 2px solid rgb(100, 100, 100);
+
+  }
+  
+  .profiles-container > .profiles > .profile > .image {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+  
+    border: 2px solid transparent;
+  }
+  
+  .profiles-container > .profiles > .profile > .username {
+    text-align: center;
+    top:80px;
+    color:white;
+    font-size: 24px;
+  }
+  .imgs{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+  }
+  .ic{
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+  }
+  h4{
+    color: white;
+  }
+  .image{
+    margin: 10px;
+   
+  }
+  .h{
+    margin-top: 18px;
+    margin-left: 30px;
+  }
+  .hh{
+    margin-left: 40px;
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 500px) {  
+    .imgs { 
+     display: flex;
+     flex-direction: column;
+     height: 100px;
+     width: 100px;
+     margin: 0;
+
+    }
+    .ic{
+      margin-top: 30px;
+      margin-left: 10px;
+      height: 50px;
+      width: 50px;
+      background-color: white;
+    }
+    .image{
+      margin: 2px;
+     
+    }
+    .hh{
+      margin-left: 10px;
+    }
+    .h{
+      margin-top: 18px;
+      margin-left: 10px;
+    }
+  
+  }
+   */

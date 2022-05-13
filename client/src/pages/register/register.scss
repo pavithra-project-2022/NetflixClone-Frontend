@@ -1,0 +1,523 @@
+@import "../../app.scss";
+
+
+
+:root{
+  --primary-color: #e50914;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  color: #999999;
+}
+
+ul{
+  list-style: none;
+}
+
+h1,h2,h3,h4{
+  color: #ffffff;
+}
+
+h3{
+  font-weight: lighter;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p{
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+img{
+  width: 100%;
+}
+
+.showcase{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../vid/1.jpg") no-repeat center center/cover;
+}
+
+.showcase::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.showcase-top{
+  position: relative;
+  z-index: 2;
+  height: 90px;
+}
+
+.showcase-top img{
+  width: 140px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(40% , -50%);
+  @include mobile{
+    width: 90px;
+  }
+}
+
+.showcase-top button{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-60% , -50%);
+ 
+}
+
+.showcase-content{
+  position: relative;
+  margin: 0 26%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 4rem;
+
+
+h1{
+  font-weight: 700;
+  font-size: 60px;
+  margin: 0 30px;
+  max-width: 800px;
+  line-height: 74.5px;
+  @include mobile {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+
+}
+h3{
+  color: white;
+  font-size: 25px;
+  margin: 16px 0;
+  @include mobile {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+p{
+  font-size: 19.2px;
+  font-weight: 300;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  @include mobile {
+    font-size: 15px;
+    padding-top: 0.2rem;
+  }
+}
+.inputt {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  margin-left:80px;
+  @include mobile {
+    width: 25%;
+    margin-right: 280px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+
+
+  .inp {
+    flex: 9;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+   
+  }
+
+  .registerButtonn {
+    flex: 3;
+    height: 100%;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    @include mobile {
+      font-size: 15px;
+    }
+    .ar {
+      height: 15px;
+      width: 15px;
+     
+    }
+  }
+  
+}
+
+.inputtt {
+  width:100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  margin-left: 60px;
+  @include mobile{
+    width:250px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+}
+
+  .new {
+    flex: 9;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+    width: 25%;
+   
+  }
+
+  .registerButton {
+    flex: 3;
+    height: 100%;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+}
+
+.btn{
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+.btn-rounded{
+  border-radius: 5px;
+}
+
+.card-0 , 
+.card-1,
+.card-2,
+.card-3,.lastsec,.footer{
+  border-top: 8px rgb(69, 69, 69) solid;
+  padding: 50px;
+}
+
+.card-0{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+  @include mobile{
+    padding: 10px 15px 25px;
+  }
+}
+
+.desc-0{
+  padding-left: 100px;
+  @include mobile{
+    padding-left: 25px;
+  }
+}
+
+.card-1{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 40%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+  @include mobile{
+    padding: 10px 15px 25px;
+  }
+}
+
+.desc-1{
+  padding-left: 80px;
+  @include mobile{
+    padding-left: 40px;
+  }
+}
+
+.style-cards h1{
+  font-size: 3rem;
+  padding: 1rem;
+  padding-left: 0;
+  @include mobile{
+    font-size: 1.5rem;
+  }
+}
+
+.style-cards h3{
+  font-size: 1.6rem;
+  line-height: 2rem;
+  @include mobile{
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+
+.card-1 video{
+  position: relative;
+  width: 100%;
+  height: 54%;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  z-index: -1;
+}
+
+.card-1 img{
+  grid-column: 2/2;
+  grid-row: 1/2;
+}
+
+.card-2{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 40% 50%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+  @include mobile{
+    padding: 10px 15px 25px;
+  }
+}
+
+.desc-2{
+  padding-left: 100px;
+  @include mobile{
+    padding-left: 10px;
+  }
+}
+
+.card-3{
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 50% 40%;
+  text-align: left;
+  align-items: center;
+  padding: 25px 45px 50px;
+  @include mobile{
+    padding: 10px 15px 25px;
+  }
+}
+
+.desc-3{
+  padding-left: 80px;
+  padding-right: 20px;
+  @include mobile{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.card-3 img{
+  width: 110%;
+  grid-column: 2/2;
+  grid-row: 1/2;
+}
+
+.card-3 video{
+  position: relative;
+  top: -87px;
+  left: 125px;
+  width: 65%;
+  height: 78%;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  z-index: -1;
+  @include mobile{
+    display: none;
+  }
+}
+
+.faq{
+  text-align: center;
+}
+
+.faq h1{
+  padding-bottom: 40px;
+  font-size: 3rem;
+  @include mobile{
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  align-items: center;
+}
+
+.questions li{
+  padding: 20px 30px;
+  margin: 5px;
+  font-size: 1.6rem;
+  background-color: #303030;
+  color: white;
+  text-align: left;
+  width: 50%;
+  @include mobile{
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 3px;
+    margin-right: 50px;
+  }
+}
+
+.faq p{
+  padding-top: 60px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  @include mobile{
+    font-size: 0.9rem;
+    padding-top: 30px;
+  }
+}
+
+.input{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 5px;
+  margin-left:80px;
+  @include mobile {
+    width: 25%;
+    margin-left: 0px;
+    height: 50px;
+    margin-top: 5px;
+  }
+}
+
+.input input{
+  flex: 9;
+  height: 100%;
+  border: none;
+  padding: 0 10px;
+}
+
+.input button{
+  flex: 3;
+    height: 100%;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    @include mobile {
+      font-size: 15px;
+    }
+    .ar {
+      height: 15px;
+      width: 15px;
+     
+    }
+  }
+  
+
+
+.footer{
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+  @include mobile{
+    max-width: 25%;
+    margin: 0.5 auto;
+  }
+}
+
+.footer ,
+.footer a{
+  color: #999999;
+  font-size: 0.9rem;
+  @include mobile{
+    font-size: 0.5rem;
+  }
+}
+
+.footer p{
+  margin-bottom: 1.5rem;
+  @include mobile{
+    margin-bottom: 0.9rem;
+  }
+}
+
+.footer .footer-cols{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-gap: 2rem;
+  @include mobile{
+    grid-gap: 0.5rem;
+  }
+}
+
+.footer li{
+  line-height: 2.4;
+  @include mobile{
+    line-height: 1.5;
+  }
+}
+
+
+
+
+    
+    

@@ -1,0 +1,20 @@
+@import "../../app.scss";
+
+.box {
+    margin-left: 200px;
+    @include mobile {
+       
+        margin-left: 20px;
+        
+      }
+   
+}
+
+.socialLinks {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    @include mobile {
+       margin-right: 50px;
+      }
+   
+}
